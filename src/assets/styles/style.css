@@ -1,0 +1,35 @@
+*,*::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo {
+    background-color: #F3FFF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container {
+    display: grid;
+    place-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+    gap: 8px;
+}
+
