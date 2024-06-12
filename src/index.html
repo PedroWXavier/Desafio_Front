@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="assets/styles/style.css"
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,9 +18,51 @@
             <img src="assets/images/imagem_login.png" alt="imagem_login">
         </div>
         <div class="login_container">
-            <div class="formulario">
-                <input type="text" />
-                <input type="password" />
+            <div class="login_form_container">
+                <div class="login_titulos_botoes">
+                    <div class="login_titulos">
+                        <p class="primeiro_titulo">Bem-vindo de volta</p>
+                        <p class="segundo_titulo">Faça login na sua conta</p>
+                    </div>
+                    
+                    <form action="/login" class="login_form">
+                        <div class="fields_container">
+                            <div class="inputs_container">
+                                <div class="input">
+                                    <label for="username" class="input_titulo">E-mail</label>
+                                    <input type="text" id="username" name="username" class="input_field" required placeholder="exemplo@gmail.com">
+                                </div>
+            
+                                <div class="input">
+                                    <label for="password" class="input_titulo">Senha</label>
+                                    <input type="password" id="password" name="password" class="input_field" required placeholder="0123456789">
+                                </div>
+                            </div>
+
+                            <div class="help_container">
+                                <div class="remember_container">
+                                    <input type="checkbox" id="lembrar" name="lembrar" class="checkbox_lembrar"/>
+                                    <p class="remember_text">Lembre de mim</p>
+                                </div>
+                                <p><a href="http://127.0.0.1:5500/src/index.html" class="link_senha">Esqueceu a senha?</a></p>
+                            </div>
+                        </div>
+
+                        <div class="buttons_container">
+                            <button type="submit" class="botao_entrar">
+                                <p>Entrar na conta</p>
+                            </button>
+                            <button type="button" class="botao_google">
+                                <img src="assets/images/imagem_google.png" alt="imagem_google" class="imagem_google">
+                                <p>Ou faca login com o Google</p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="rodape_cadastro">
+                    <p>Nao tem uma conta? <a href="http://127.0.0.1:5500/src/index.html" class="rodape_link">Cadastre-se</a></p>
+                </div>
             </div>
         </div>
     </main>

@@ -12,6 +12,10 @@ main {
     height: 100vh;
 }
 
+body {
+    font-family: "Archivo", sans-serif;
+}
+
 .logo {
     background-color: #F3FFF2;
     display: flex;
@@ -24,12 +28,188 @@ main {
     place-items: center;
 }
 
-.formulario {
+.login_form_container {
     display: flex;
     flex-direction: column;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 20px;
-    gap: 8px;
+    width: 400px;
+    height: 614px;
+    gap: 64px;
 }
 
+.rodape_cadastro {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    size: 20px;
+    line-height: 21.76px;
+    color: #1A202C;
+}
+
+.rodape_link {
+    color: #1E9E6A;
+}
+
+.login_titulos_botoes {
+    display: flex;
+    flex-direction: column;
+    height: 528px;
+    gap: 40px;
+}
+
+.primeiro_titulo {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 21.76px;
+    color: #1A202C;
+}
+
+.segundo_titulo {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 34.82px;
+    color: #1A202C;
+}
+
+.login_titulos {
+    height: 69px;
+    gap: 12px;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 56px;
+    height: 419px;
+}
+
+.fields_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    height: 235px;
+    gap: 24px;
+}
+
+.inputs_container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 194px;
+    gap: 32px;
+}
+
+.input {
+    height: 81px;
+    gap: 12px;
+}
+
+.input_titulo {
+    font-weight: 500;
+    size: 18px;
+    line-height: 19.58px;
+    color: #1A202C;
+}
+
+.help_container {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 17px;
+    gap: 101px;
+}
+
+.remember_container {
+    display: flex;
+    gap: 12px;
+}
+
+.checkbox_lembrar {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox_lembrar:checked {
+    background-color: #1E9E6A;
+}
+
+.remember_text {
+    font-weight: 500;
+    size: 16px;
+    line-height: 17.41px;
+    color: #1A202C;
+}
+
+.link_senha {
+    font-weight: 500;
+    size: 16px;
+    line-height: 17.41px;
+    color: #1E9E6A;
+}
+
+.buttons_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    height: 128px;
+    gap: 24px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_field {
+    width: 400px;
+    height: 49px;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #E8E8E8;
+    background-color: #F7FAFC;
+}
+
+.botao_entrar {
+    width: 400px;
+    height: 52px;
+    border-radius: 4px;
+    border: 0px;
+    background-color: #1E9E6A;
+    color: #FFF;
+
+    font-weight: 600;
+    size: 18px;
+    line-height: 19.58px;
+}
+
+.botao_google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 400px;
+    height: 52px;
+    border-radius: 4px;
+    border: 0px;
+    background-color: #1A202C;
+    color: #FFF;
+
+    font-weight: 600;
+    size: 18px;
+    line-height: 19.58px;
+}
+
+.imagem_google {
+    width: 24px;
+    height: 24px;
+}
