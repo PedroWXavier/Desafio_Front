@@ -1,8 +1,3 @@
-function ola(){
-    document.write("Ola!");
+function entrar_google(){
+    alert("Entrar com Google!!!");
 }
-
-//alert("Opa!");
-//ola();
-
-//var rec = prompt("Escreva alguma coisa");
