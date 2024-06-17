@@ -6,8 +6,6 @@
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     width: 100vw;
     height: 100vh;
 }
@@ -17,13 +15,18 @@ body {
 }
 
 .logo {
-    background-color: #F3FFF2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    visibility: hidden;
+}
+
+.logo_img {
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 .login_container {
+    width: 100vw;
+    height: 100vh;
     display: grid;
     place-items: center;
 }
@@ -31,8 +34,8 @@ body {
 .login_form_container {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 614px;
+    width: 327px;
+    height: 566px;
     gap: 64px;
 }
 
@@ -40,8 +43,8 @@ body {
     display: flex;
     justify-content: center;
     font-weight: 500;
-    size: 20px;
-    line-height: 21.76px;
+    size: 16px;
+    line-height: 17.41px;
     color: #1A202C;
 }
 
@@ -56,23 +59,25 @@ body {
     gap: 40px;
 }
 
+.login_titulos {
+    display: flex;
+    flex-direction: column;
+    height: 51px;
+    gap: 8px;
+}
+
 .primeiro_titulo {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 21.76px;
+    line-height: 17.41px;
     color: #1A202C;
 }
 
 .segundo_titulo {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
-    line-height: 34.82px;
+    line-height: 26.11px;
     color: #1A202C;
-}
-
-.login_titulos {
-    height: 69px;
-    gap: 12px;
 }
 
 .login_form {
@@ -80,23 +85,23 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 56px;
-    height: 419px;
+    height: 394px;
 }
 
 .fields_container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 400px;
-    height: 235px;
+    width: 327px;
+    height: 224px;
     gap: 24px;
 }
 
 .inputs_container {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 194px;
+    width: 327px;
+    height: 184px;
     gap: 32px;
 }
 
@@ -107,17 +112,16 @@ body {
 
 .input_titulo {
     font-weight: 500;
-    size: 18px;
-    line-height: 19.58px;
+    size: 14px;
+    line-height: 15.23px;
     color: #1A202C;
 }
 
 .help_container {
     display: flex;
-    justify-content: center;
-    width: 400px;
-    height: 17px;
-    gap: 101px;
+    justify-content: space-between;
+    width: 327px;
+    height: 16px;
 }
 
 .remember_container {
@@ -144,15 +148,15 @@ body {
 
 .remember_text {
     font-weight: 500;
-    size: 16px;
-    line-height: 17.41px;
+    size: 14px;
+    line-height: 15.23px;
     color: #1A202C;
 }
 
 .link_senha {
     font-weight: 500;
-    size: 16px;
-    line-height: 17.41px;
+    size: 14px;
+    line-height: 15.23px;
     color: #1E9E6A;
 }
 
@@ -160,8 +164,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 400px;
-    height: 128px;
+    width: 327px;
+    height: 114px;
     gap: 24px;
 }
 
@@ -171,7 +175,7 @@ body {
 }
 
 .input_field {
-    width: 400px;
+    width: 327px;
     height: 49px;
     padding: 16px;
     border-radius: 4px;
@@ -180,16 +184,16 @@ body {
 }
 
 .botao_entrar {
-    width: 400px;
-    height: 52px;
+    width: 327px;
+    height: 45px;
     border-radius: 4px;
     border: 0px;
     background-color: #1E9E6A;
     color: #FFF;
 
     font-weight: 600;
-    size: 18px;
-    line-height: 19.58px;
+    size: 16px;
+    line-height: 17.41px;
 }
 
 .botao_google {
@@ -197,19 +201,140 @@ body {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    width: 400px;
-    height: 52px;
+    width: 327px;
+    height: 45px;
     border-radius: 4px;
     border: 0px;
     background-color: #1A202C;
     color: #FFF;
 
     font-weight: 600;
-    size: 18px;
-    line-height: 19.58px;
+    size: 16px;
+    line-height: 17.41px;
 }
 
 .imagem_google {
     width: 24px;
     height: 24px;
+}
+
+@media screen and (min-width: 1700px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo {
+        background-color: #F3FFF2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: visible;
+    }
+
+    .logo_img {
+        display: block;
+        width: 500px;
+        height: 421px;
+    }
+
+    .login_container {
+        width: 50vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .login_form_container{
+        width: 400px;
+        height: 614px;
+    }
+
+    .login_titulos {
+        height: 69px;
+        gap: 12px;
+    }
+
+    .primeiro_titulo {
+        font-size: 20px;
+        line-height: 21.76px;
+    }
+    
+    .segundo_titulo {
+        font-size: 32px;
+        line-height: 34.82px;
+    }
+
+    .login_form {
+        height: 419px;
+    }
+
+    .fields_container {
+        width: 400px;
+        height: 235px;
+    }
+
+    .inputs_container {
+        width: 400px;
+        height: 194px;
+    }
+
+    .input_titulo {
+        size: 18px;
+        line-height: 19.58px;
+    }
+
+    .input_field {
+        width: 400px;
+    }
+
+    .help_container {
+        width: 400px;
+        height: 17px;
+        gap: 101px;
+    }
+
+    .remember_text {
+        size: 16px;
+        line-height: 17.41px;
+    }
+    
+    .link_senha {
+        size: 16px;
+        line-height: 17.41px;
+    }
+
+    .buttons_container {
+        width: 400px;
+        height: 128px;
+    }
+
+    .botao_entrar {
+        width: 400px;
+        height: 52px;
+    
+        size: 18px;
+        line-height: 19.58px;
+    }
+    
+    .botao_google {
+        gap: 12px;
+        width: 400px;
+        height: 52px;
+    
+        size: 18px;
+        line-height: 19.58px;
+    }
+    
+    .imagem_google {
+        width: 24px;
+        height: 24px;
+    }
+
+    .rodape_cadastro {
+        size: 20px;
+        line-height: 21.76px;
+    }
 }
